@@ -1,6 +1,6 @@
 :root {
     --primary-color: #645E59;
-    --secondary-color: #EEEFE9;
+    --secondary-color: rgb(238, 239, 233, 0.65);
     --third-color: #F7644D;
 }
 
@@ -24,6 +24,11 @@ h2 {
 
 .main-title {
     font-size: 2em;
+    color: var(--third-color);
+    border: var(--primary-color) 2px solid;
+    background-color: var(--secondary-color);
+    margin: 0 19%;
+    padding: 0.1em;
 }
 
 .random-btn a {

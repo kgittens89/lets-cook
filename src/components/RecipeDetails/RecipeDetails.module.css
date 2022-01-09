@@ -23,5 +23,9 @@
 .title {
     font-size: 1.7em;
     height: 1.5em;
-    padding: 10%;
+        color: var(--third-color);
+        border: var(--primary-color) 2px solid;
+        background-color: var(--secondary-color);
+        margin: 4% 19%;
+        padding: 0.1em;
 }

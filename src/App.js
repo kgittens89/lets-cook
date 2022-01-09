@@ -1,12 +1,8 @@
-
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  return (
-    <div>
-      Hello
-    </div>
-  );
+	return <div>Hello</div>;
 }
 
 export default App;

@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7em 6em;
+}
+
+nav h1 {
+    font-size: 2em;
+    padding: 0.3em;
+    color: var(--third-color);
+    border: var(--primary-color) 2px solid;
+    background-color: var(--secondary-color);
+}
+
+nav h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 0.2em 0.4em;
+    color: var(--third-color);
+    border: var(--primary-color) 2px solid;
+    background-color: var(--secondary-color);
+}
+
+.about {
+    background-color: #E3E3E3;
+    border: 1px solid var(--primary-color);
+    padding: 1em;
+    margin: 1em;
+    font-size: 1.1em;
+}

@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import recipes from '../../data.json';
+// import recipes from '../../data.json';
 
 import Button from './Button/Button';
 import useFetchRandom from '../../hooks/useFetchRandom';

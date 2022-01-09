@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+## Project Description 
+> My app is called Let’s Cook! It’s a recipe app for people who have trouble deciding on what to cook for the day. Users are initially presented with 3 random recipe choices, which lead to the recipe details. Users can also click for a random recipe choice. In the future, I’d like to sort recipes by diet preferences, course, etc.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Link to the API you plan to use
+> https://spoonacular.com/food-api/docs
 
-## Available Scripts
+## Example data response you plan to use
+```Object
+aggregateLikes: 1
+analyzedInstructions: [{…}]
+cheap: false
+creditsText: "Foodista.com – The Cooking Encyclopedia Everyone Can Edit"
+cuisines: []
+dairyFree: true
+diets: (2) ['dairy free', 'pescatarian']
+dishTypes: (4) ['lunch', 'main course', 'main dish', 'dinner']
+extendedIngredients: (7) [{…}, {…}, {…}, {…}, {…}, {…}, {…}]
+gaps: "no"
+glutenFree: false
+healthScore: 28
+id: 654812
+image: "https://spoonacular.com/recipeImages/654812-556x370.jpg"
+imageType: "jpg"
+instructions: "<ol><li>Bring water to a boil for pasta. Cook for 10 minutes or until al dente. In one saucepan heat half of the olive oil. Add garlic and saute for a few seconds. Add tomatoes and cook for 5 minutes or until thickened; season with salt and pepper.</li><li>In another skillet cook the shrimp in half the remaining olive oil. Remove from heat and toss in the parsley; season with salt and pepper. Drain pasta and transfer to a serving bowl; add shrimp and tomato mixtures and toss; do not serve with cheese.</li><li>This recipe yields 2 servings.</li></ol>"
+license: "CC BY 3.0"
+lowFodmap: false
+occasions: []
+originalId: null
+pricePerServing: 616.45
+readyInMinutes: 45
+servings: 2
+sourceName: "Foodista"
+sourceUrl: "http://www.foodista.com/recipe/8YWWDKPS/pasta-and-seafood"
+spoonacularScore: 69
+spoonacularSourceUrl: "https://spoonacular.com/pasta-and-seafood-654812"
+summary: "Pastan and Seafood is a <b>dairy free and pescatarian</b> main course. One serving contains <b>521 calories</b>, <b>38g of protein</b>, and <b>4g of fat</b>. This recipe serves 2 and costs $5.79 per serving. From preparation to the plate, this recipe takes around <b>45 minutes</b>. This recipe from Foodista has 1 fans. If you have shrimp, squid ink linguine, parsley, and a few other ingredients on hand, you can make it. To use up the salt you could follow this main course with the <a href=\"https://spoonacular.com/recipes/apple-turnovers-recipe-48175\">Apple Turnovers Recipe</a> as a dessert. All things considered, we decided this recipe <b>deserves a spoonacular score of 57%</b>. This score is solid. Try <a href=\"https://spoonacular.com/recipes/seafood-pasta-373851\">Seafood Pasta</a>, <a href=\"https://spoonacular.com/recipes/seafood-pasta-246928\">Seafood Pasta</a>, and <a href=\"https://spoonacular.com/recipes/seafood-pasta-22624\">Seafood Pasta</a> for similar recipes."
+sustainable: false
+title: "Pasta and Seafood"
+vegan: false
+vegetarian: false
+veryHealthy: false
+veryPopular: false
+weightWatcherSmartPoints: 12
+winePairing: {pairedWines: Array(0), pairingText: 'No one wine will suit every pasta dish. Pasta in a…tion if you ask again with a specific pasta dish.', productMatches: Array(0)}
+[[Prototype]]: Object
+```
+paste your sample data here
+```results:
+ids 654959,
+title:
+"Pasta With Tuna"
+image:
+"https://spoonacular.com/recipeImages/654959-312x231.jpg"
+imageType:
+"jpg"
+id: 511728,
+title: "Pasta Marcherita
+image:
+"https://spoonacular.com/recipelmages/511728-312x231.ipg",
+imageType: "jpg
+id: 654812,
+title: "Pasta and Seafood"
+image:
+"https://spoonacular.com/recipeImages/654812-312x231.jpg"
+imageType: "jpg"
+id: 654857,
+title: "Pasta On The Border"
+image:
+"https://spoonacular.com/recipeImages/654857-312×231.jpg",
+imageType:
+"jpg"
+id:
+654883,
+title: "Pasta Vegetable Soup"
+image:
+"https://spoonacular.com/recipelmages/654883-312x231.jpg"
+imageType:
+"jpg"
+id: 654928,
+title:
+"Pasta With Italian Sausage"
+image:
+"https://spoonacular.com/recipeImages/654928-312x231.jpg".
+imageType:
+"jpg"
+id: 654926,
+title: "Pasta With Gorgonzola Sauce"
+image:
+"https://spoonacular.com/recipelmages/654926-312x231.jpg"
+imageType:
+"jpg"
+```
+## Visual of your component hierarchy
 
-In the project directory, you can run:
+<img width="1010" alt="Screen Shot 2022-01-05 at 9 56 33 AM" src="https://media.git.generalassemb.ly/user/39966/files/012d8280-6e0e-11ec-8e5c-dd3591d58530">
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Wire Frames
+>
+<img width="1010" alt="Screen Shot 2022-01-05 at 9 56 46 AM" src="https://media.git.generalassemb.ly/user/39966/files/dcd1a600-6e0d-11ec-9adb-6f23006ab6c5">
+<img width="1010" alt="Screen Shot 2022-01-05 at 9 56 39 AM" src="https://media.git.generalassemb.ly/user/39966/files/dd6a3c80-6e0d-11ec-88c8-d722abc0acf5">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## User Stories
 
-### `npm run build`
+### MVP Goals
+- As a user, I would like to have randomly suggested recipes so that I can consider which recipe to choose. 
+- As a user, I would like recipe details so that I know what the recipe entails.  
+- As a user, I would like a photo of the recipe so that I have a visual of the finished recipe
+- As a user, I would like to be able to easily navigate back to the home page, so that I don’t have to refresh page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Stretch Goals
+- As a user, I would like to be able to search for a recipe so that I can find one that I want.
+- As a user, I would like to set diet preferences so that I only see recipes that fit the preference. 
+- As a user, I would like to see similar recipes to the my current recipe choice. 

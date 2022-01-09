@@ -16,7 +16,7 @@ function Main() {
 	}
 	return (
 		<>
-			<h2>Current Random Suggestions</h2>
+			<h2 className="main-title">Current Random Suggestions</h2>
 			<div className='random-recipe-card'>
 				{randomRecipes.map((recipe) => {
 					return (

@@ -1,12 +1,30 @@
+li {
+    font-size: 1.5vw;
+}
+
+h4 {
+    font-size: 2vw;
+}
+
 .bottom_section {
-    width: 50%;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
 }
 
 .details {
-    /* display: flex;
-    justify-content: center;
-    align-content: center; */
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.ingredients {
+    grid-column: 1 / 2;
+}
+
+.instructions {
+    grid-column: 2 / 3;
 }
 
 .img {
@@ -20,14 +38,28 @@
     text-align: center;
     padding: 0.5em 1em;
     font-weight: 600;
+    font-size: 1.6vw;
 }
 
 .title {
-    font-size: 1.7em;
-    max-height: 1.5em;
+    font-size: 2.8vw;
+    max-height: 2em;
     color: var(--third-color);
     border: var(--primary-color) 2px solid;
     background-color: var(--secondary-color);
     margin: 4% 19%;
-    padding: 0.1em;
+    padding: 0.4em;
+    text-align: center;
+}
+
+@media (max-width: 475px) {
+    .summary {
+        background-color: var(--secondary-color);
+        border: 1px solid var(--primary-color);
+        font-size: 2vw;
+    }
+    
+    li {
+        font-size: 2vw;
+    }
 }

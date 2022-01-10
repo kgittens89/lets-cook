@@ -8,8 +8,6 @@ import './Main.css';
 
 function Main() {
 	const randomRecipes = useFetchRandom(3);
-	// const [randomRecipes, setRandomRecipes] = useState([recipes])
-	// console.log(randomRecipes)
 
 	if (!randomRecipes) {
 		return <p>Loading...</p>;

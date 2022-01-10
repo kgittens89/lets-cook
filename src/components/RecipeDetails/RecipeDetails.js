@@ -53,13 +53,11 @@ function RecipeDetails(props) {
 				</p>
 			</div>
 			<div className={styles.bottom_section}>
-				<h4>Ingredients</h4>
 				{!ingredients ? (
 					<p>Loading...</p>
 				) : (
 					<Ingredients ingredients={ingredients} />
 				)}
-				<h4>Instructions</h4>
 				{!recipeSteps ? (
 					<p>Loading...</p>
 				) : (

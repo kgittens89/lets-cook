@@ -4,15 +4,15 @@ import './Nav.css';
 
 function Nav() {
 	return (
-		<nav>
+		<ul className='nav'>
 			<Link to='/'>
-				<h1>Let's Cook!</h1>
+				<li className='logo'>Let's Cook!</li>
 			</Link>
 
 			<Link to='/about'>
-				<h2>About</h2>
+				<li className='about-link'>About</li>
 			</Link>
-		</nav>
+		</ul>
 	);
 }
 

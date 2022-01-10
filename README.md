@@ -1,10 +1,42 @@
-## Project Description 
+## Let's Cook!
 > My app is called Let’s Cook! It’s a recipe app for people who have trouble deciding on what to cook for the day. Users are initially presented with 3 random recipe choices, which lead to the recipe details. Users can also click for a random recipe choice. In the future, I’d like to sort recipes by diet preferences, course, etc.
 
-## Link to the API you plan to use
+## API Used
 > https://spoonacular.com/food-api/docs
 
-## Example data response you plan to use
+
+## Technologies Used 
+- CSS
+- Javascript
+- React
+- Visual Studio Code Version 1.63.2
+
+## Installation Instructions
+> Note: This app was created using Visual Studio Code Version 1.63.2
+
+- Fork and clone this repo into personal directory of choice
+
+    ``` git clone [SSH or HTTPS KEY] ```
+
+- Change into the repo
+
+    ``` cd lets-cook ```
+
+- Install dependencies
+
+    ``` npm install ```
+
+- Open the folder in VScode
+
+    ``` code . ```
+
+- Start up server
+
+    ``` npm start ```
+
+
+
+## Example Data Response 
 ```Object
 aggregateLikes: 1
 analyzedInstructions: [{…}]

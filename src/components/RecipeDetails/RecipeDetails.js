@@ -3,14 +3,16 @@ import { useParams } from 'react-router-dom';
 
 import Ingredients from './ExtraData/Ingredients';
 import Instructions from './ExtraData/Instructions';
+
 import styles from './RecipeDetails.module.css';
 import brownBagImage from '../brown.jpeg';
 import mainImage from '../nordwood-themes-Tmz8FThN_BE-unsplash.jpg';
 
-function RecipeDetails(props) {
+function RecipeDetails() {
 	const [recipe, setRecipe] = useState(null);
 	const [recipeSteps, setRecipeSteps] = useState([]);
 	const [ingredients, setIngredients] = useState([]);
+	const [errorState, setErrorState] = useState(false);
 	const { id } = useParams();
 
 	useEffect(() => {
@@ -27,13 +29,18 @@ function RecipeDetails(props) {
 		fetch(
 			`https://api.spoonacular.com/recipes/${id}/information?&apiKey=${process.env.REACT_APP_API_KEY}`
 		)
-			.then((res) => res.json())
 			.then((res) => {
-				console.log(res);
+				if (res.status !== 200) {
+					setErrorState(true)
+				}
+				return res.json()
+			})
+			.then((res) => {
 				setRecipe(res);
 				setRecipeSteps(res.analyzedInstructions[0].steps);
 				setIngredients(res.extendedIngredients);
-			});
+			})
+			.catch(err => console.log(err))
 	};
 
 	if (!recipe) {
@@ -41,7 +48,7 @@ function RecipeDetails(props) {
 	}
 	return (
 		<div className={styles.details}>
-			<div className={styles.upper_section}>
+			<div>
 				<h2 className={styles.title}>{recipe.title}</h2>
 				<img src={recipe.image} alt={recipe.title} className={styles.img} />
 
@@ -53,19 +60,18 @@ function RecipeDetails(props) {
 				</p>
 			</div>
 			<div className={styles.bottom_section}>
-				<h4>Ingredients</h4>
 				{!ingredients ? (
 					<p>Loading...</p>
 				) : (
 					<Ingredients ingredients={ingredients} />
 				)}
-				<h4>Instructions</h4>
 				{!recipeSteps ? (
 					<p>Loading...</p>
 				) : (
 					<Instructions recipeSteps={recipeSteps} />
 				)}
 			</div>
+			<p style={{display: errorState ? 'inline' : 'none'}}>Response Error</p>
 		</div>
 	);
 }

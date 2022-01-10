@@ -1,15 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import recipes from '../../data.json';
+
+import useFetchRandom from '../../hooks/useFetchRandom';
 
 import Button from './Button/Button';
-import useFetchRandom from '../../hooks/useFetchRandom';
 import './Main.css';
 
 function Main() {
 	const randomRecipes = useFetchRandom(3);
-	// const [randomRecipes, setRandomRecipes] = useState([recipes])
-	// console.log(randomRecipes)
 
 	if (!randomRecipes) {
 		return <p>Loading...</p>;
@@ -23,7 +21,7 @@ function Main() {
 						<Link to={`/${recipe.id}`} key={recipe.id}>
 							<div className='img-card'>
 								<img src={recipe.image} alt={recipe.title} />
-								<h2>{recipe.title}</h2>
+								<p>{recipe.title}</p>
 							</div>
 						</Link>
 					);

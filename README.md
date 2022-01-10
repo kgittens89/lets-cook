@@ -1,6 +1,10 @@
 ## Let's Cook!
 > My app is called Let’s Cook! It’s a recipe app for people who have trouble deciding on what to cook for the day. Users are initially presented with 3 random recipe choices, which lead to the recipe details. Users can also click for a random recipe choice. In the future, I’d like to sort recipes by diet preferences, course, etc.
 
+## Link to Deployed App
+
+> https://focused-shannon-5102d7.netlify.app/
+
 ## API Used
 > https://spoonacular.com/food-api/docs
 
@@ -33,7 +37,6 @@
 - Start up server
 
     ``` npm start ```
-
 
 
 ## Example Data Response 
@@ -122,6 +125,14 @@ image:
 imageType:
 "jpg"
 ```
+
+## Working Site Images 
+![Home Page](assets/HomePage.png)
+
+![Recipe Details Page](assets/RecipeDetails.png)
+
+![Recipe Details Page 2](assets/RecipeDetails2.png)
+
 ## Visual of your component hierarchy
 
 <img width="1010" alt="Screen Shot 2022-01-05 at 9 56 33 AM" src="https://media.git.generalassemb.ly/user/39966/files/012d8280-6e0e-11ec-8e5c-dd3591d58530">

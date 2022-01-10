@@ -1,10 +1,17 @@
-## Project Description 
+## Let's Cook!
 > My app is called Let’s Cook! It’s a recipe app for people who have trouble deciding on what to cook for the day. Users are initially presented with 3 random recipe choices, which lead to the recipe details. Users can also click for a random recipe choice. In the future, I’d like to sort recipes by diet preferences, course, etc.
 
-## Link to the API you plan to use
+## API Used
 > https://spoonacular.com/food-api/docs
 
-## Example data response you plan to use
+
+## Technologies Used 
+- CSS
+- Javascript
+- React
+
+
+## Example Data Response 
 ```Object
 aggregateLikes: 1
 analyzedInstructions: [{…}]

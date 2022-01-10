@@ -9,6 +9,31 @@
 - CSS
 - Javascript
 - React
+- Visual Studio Code Version 1.63.2
+
+## Installation Instructions
+> Note: This app was created using Visual Studio Code Version 1.63.2
+
+- Fork and clone this repo into personal directory of choice
+
+    ``` git clone [SSH or HTTPS KEY] ```
+
+- Change into the repo
+
+    ``` cd lets-cook ```
+
+- Install dependencies
+
+    ``` npm install ```
+
+- Open the folder in VScode
+
+    ``` code . ```
+
+- Start up server
+
+    ``` npm start ```
+
 
 
 ## Example Data Response 

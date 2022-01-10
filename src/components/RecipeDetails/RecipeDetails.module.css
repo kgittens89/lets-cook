@@ -1,9 +1,9 @@
-li {
-    font-size: 1.5vw;
-}
-
 h4 {
     font-size: 2vw;
+}
+
+li {
+    font-size: 1.5vw;
 }
 
 .bottom_section {
@@ -19,19 +19,20 @@ h4 {
     grid-template-rows: 1fr 1fr;
 }
 
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border: 2px solid var(--primary-color);
+}
+
 .ingredients {
     grid-column: 1 / 2;
 }
 
 .instructions {
     grid-column: 2 / 3;
-}
-
-.img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
 }
 
 .summary {
@@ -53,13 +54,13 @@ h4 {
 }
 
 @media (max-width: 475px) {
+    li {
+        font-size: 2vw;
+    }
+
     .summary {
         background-color: var(--secondary-color);
         border: 1px solid var(--primary-color);
         font-size: 2vw;
-    }
-    
-    li {
-        font-size: 2vw;
-    }
+    }  
 }

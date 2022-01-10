@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import recipes from '../../data.json';
+
+import useFetchRandom from '../../hooks/useFetchRandom';
 
 import Button from './Button/Button';
-import useFetchRandom from '../../hooks/useFetchRandom';
 import './Main.css';
 
 function Main() {

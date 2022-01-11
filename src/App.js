@@ -9,12 +9,16 @@ import RecipeDetails from './components/RecipeDetails/RecipeDetails';
 function App() {
 	return (
 		<div className='container'>
-			<Nav />
-			<Routes>
-				<Route path='/' element={<Main />} />
-				<Route path='/:id' element={<RecipeDetails />} />
-				<Route path='/about' element={<About />} />
-			</Routes>
+			<nav>
+				<Nav />
+			</nav>
+			<main>
+				<Routes>
+					<Route path='/' element={<Main />} />
+					<Route path='/:id' element={<RecipeDetails />} />
+					<Route path='/about' element={<About />} />
+				</Routes>
+			</main>
 		</div>
 	);
 }

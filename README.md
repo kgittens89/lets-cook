@@ -127,16 +127,10 @@ imageType:
 ```
 
 ## Working Site Images 
-![Home Page](assets/HomePage.png)
 
-![Recipe Details Page](assets/RecipeDetails.png)
+![Home Page](assets/Main.png)
 
-![Recipe Details Page 2](assets/RecipeDetails2.png)
-
-## Visual of your component hierarchy
-
-<img width="1010" alt="Screen Shot 2022-01-05 at 9 56 33 AM" src="https://media.git.generalassemb.ly/user/39966/files/012d8280-6e0e-11ec-8e5c-dd3591d58530">
-
+![Recipe Details Page](assets/Details.png)
 
 ## Wire Frames
 >

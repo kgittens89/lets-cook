@@ -6,7 +6,7 @@ import Instructions from './ExtraData/Instructions';
 
 import styles from './RecipeDetails.module.css';
 import brownBagImage from '../brown.jpeg';
-import mainImage from '../nordwood-themes-Tmz8FThN_BE-unsplash.jpg';
+import mainImage from '../joanna-kosinska-Prfs32wh-o4-unsplash.jpg';
 
 function RecipeDetails() {
 	const [recipe, setRecipe] = useState(null);

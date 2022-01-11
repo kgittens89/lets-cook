@@ -26,9 +26,9 @@
     justify-content: space-between;
     align-items: center;
     list-style-type: none; 
-    padding: 0 5em 1em;
+    padding: 0 2em 0.4em;
     max-width: 80%;
-    margin: 1em auto;
-    border: var(--primary-color) 2px solid;
+    margin: 2em auto;
+    border-bottom: var(--primary-color) 2px solid;
     background-color: var(--secondary-color);
 }

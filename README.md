@@ -1,5 +1,5 @@
 ## Let's Cook!
-> My app is called Let’s Cook! It’s a recipe app for people who have trouble deciding on what to cook for the day. Users are initially presented with 3 random recipe choices, which lead to the recipe details. Users can also click for a random recipe choice. In the future, I’d like to sort recipes by diet preferences, course, etc.
+> My app is called Let’s Cook! It’s a recipe app for people who have trouble deciding on what to cook for the day. Users are initially presented with 3 random recipe choices, which when clicked, leads to the recipe details. Users can also click the "Randomizer" for a random recipe choice. Happy Cooking!
 
 ## Link to Deployed App
 

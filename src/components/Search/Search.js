@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SearchResults from './SearchResults';
+import './Search.css';
 
 function Search() {
     const initialState = {
@@ -21,7 +22,7 @@ function Search() {
     }
 
     const fetchSearchResults = () => {
-        let url = `https://api.spoonacular.com/recipes/complexSearch?query=${formState.searchInput.toLowerCase()}&${formState.checkboxInput.toLowerCase()}&number=10&apiKey=${process.env.REACT_APP_API_KEY}`;
+        let url = `https://api.spoonacular.com/recipes/complexSearch?query=${formState.searchInput.toLowerCase()}&${formState.checkboxInput.toLowerCase()}&number=15&apiKey=${process.env.REACT_APP_API_KEY}`;
 
         fetch(url)
             .then(res => res.json())
@@ -31,7 +32,7 @@ function Search() {
 
     return (
 			<>
-				<form onSubmit={handleSubmit}>
+				<form onSubmit={handleSubmit} className='search-form'>
 					<label htmlFor='searchInput'>Search</label>
 					<input
 						type='text'
@@ -58,7 +59,7 @@ function Search() {
 						<option value='lowFodMap'>Low FODMAP</option>
 						<option value='whole30'>Whole30</option>
 					</select>
-					<button type='submit'>Submit</button>
+					<button type='submit' className='search-button'>Submit</button>
             </form>
             <SearchResults results={searchResults} />
 			</>

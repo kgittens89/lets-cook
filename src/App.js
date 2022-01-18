@@ -5,6 +5,7 @@ import About from './components/Nav/About/About';
 import Nav from './components/Nav/Nav';
 import Main from './components/Main/Main';
 import RecipeDetails from './components/RecipeDetails/RecipeDetails';
+import Search from './components/Search/Search';
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 					<Route path='/' element={<Main />} />
 					<Route path='/:id' element={<RecipeDetails />} />
 					<Route path='/about' element={<About />} />
+					<Route path='/search' element={<Search />} />
 				</Routes>
 			</main>
 		</div>

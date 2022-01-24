@@ -3,7 +3,7 @@ h4 {
 }
 
 li {
-    font-size: 1.5vw;
+    font-size: 1.6vw;
 }
 
 .bottom_section {
@@ -53,7 +53,7 @@ li {
     text-align: center;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 500px) {
     li {
         font-size: 2vw;
     }
@@ -63,4 +63,9 @@ li {
         border: 1px solid var(--primary-color);
         font-size: 2vw;
     }  
+
+    li {
+        font-weight: 600;
+        font-size: 2vw;
+    }
 }

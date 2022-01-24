@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Nav.css';
+import '../../Nav/Nav.css';
 
 function About() {
 	return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import About from './components/Nav/About/About';
+import About from './components/Main/About/About';
 import Nav from './components/Nav/Nav';
 import Main from './components/Main/Main';
 import RecipeDetails from './components/RecipeDetails/RecipeDetails';
@@ -10,9 +10,7 @@ import Search from './components/Search/Search';
 function App() {
 	return (
 		<div className='container'>
-			<nav>
 				<Nav />
-			</nav>
 			<main>
 				<Routes>
 					<Route path='/' element={<Main />} />

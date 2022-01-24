@@ -46,3 +46,27 @@
         margin-left: 1em;
         border-radius: 3px;
 }
+
+@media(max-width: 500px) {
+    .search-form {
+        display: grid;
+    }
+
+    .search-button {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .result-box {
+        background-color: rgb(238, 239, 233, 0.8);
+    }
+
+    .search-results {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-title {
+        font-size: 3vw;
+    }
+}

@@ -4,17 +4,27 @@ import './Nav.css';
 
 function Nav() {
 	return (
-		<ul className='nav'>
-			<Link to='/'>
-				<li className='logo'>Let's Cook!</li>
-			</Link>
+		<nav>
+			<ul className='nav'>
+				<li>
+					<Link to='/' className='logo'>
+						Let's Cook!
+					</Link>
+				</li>
 
-			<Link to='/search'><li className="search">Search</li></Link>
+				<li>
+					<Link to='/search' className='search'>
+						Search
+					</Link>
+				</li>
 
-			<Link to='/about'>
-				<li className='about-link'>About</li>
-			</Link>
-		</ul>
+				<li>
+					<Link to='/about' className='about-link'>
+						About
+					</Link>
+				</li>
+			</ul>
+		</nav>
 	);
 }
 

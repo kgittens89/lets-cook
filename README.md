@@ -3,7 +3,7 @@
 
 ## Link to Deployed App
 
-> https://focused-shannon-5102d7.netlify.app/
+> https://lets-cook-guys.netlify.app/
 
 ## API Used
 > https://spoonacular.com/food-api/docs

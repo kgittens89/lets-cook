@@ -6,7 +6,7 @@ function Ingredients({ ingredients }) {
 			<h4>Ingredients</h4>
 			<ul>
 				{ingredients.map((ingredient) => {
-					return <li key={ingredient.id}>{ingredient.originalString}</li>;
+					return <li key={ingredient.id}>{ingredient.original}</li>;
 				})}
 			</ul>
 		</div>

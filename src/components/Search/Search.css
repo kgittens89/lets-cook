@@ -33,7 +33,6 @@
 .search-form {
     display: flex;
     justify-content: center;
-    color: var(--primary-color);
 }
 
 .search-button {
@@ -43,7 +42,7 @@
         font-size: 1em;
         padding: 0.35em;
         font-weight: 600;
-        margin-left: 1em;
+        margin: 1em;
         border-radius: 3px;
 }
 

@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import SearchResults from './SearchResults';
 import './Search.css';
+import {
+	TextField,
+	InputLabel,
+	MenuItem,
+	Select,
+	FormControl
+} from '@mui/material';
+
 
 function Search() {
     const initialState = {
@@ -12,13 +20,12 @@ function Search() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(formState)
         fetchSearchResults()
         setFormState(initialState)
     };
 
-    const handleChange = (event) => {
-        setFormState({ ...formState, [event.target.id]: event.target.value });
+	const handleChange = (event) => {
+        setFormState({ ...formState, [event.target.name]: event.target.value });
     }
 
     const fetchSearchResults = () => {
@@ -33,35 +40,41 @@ function Search() {
     return (
 			<>
 				<form onSubmit={handleSubmit} className='search-form'>
-					<label htmlFor='searchInput'>Search</label>
-					<input
-						type='text'
-						id='searchInput'
-						onChange={handleChange}
-						value={formState.searchInput}
-					/>
-					<label htmlFor='checkboxInput'>Diet preference</label>
-					<select
-						name='checkboxInput'
-						id='checkboxInput'
-						onChange={handleChange}
-						value={formState.checkboxInput}>
-						<option value=''>Choose</option>
-						<option value='glutenFree'>Gluten Free</option>
-						<option value='keto'>Ketogenic</option>
-						<option value='vegetarian'>Vegetarian</option>
-						<option value='lactoVeg'>Lacto-Vegetarian</option>
-						<option value='ovoVeg'>Ovo-Vegetaran</option>
-						<option value='vegan'>Vegan</option>
-						<option value='pescetarian'>Pescetarian</option>
-						<option value='paleo'>Paleo</option>
-						<option value='primal'>Primal</option>
-						<option value='lowFodMap'>Low FODMAP</option>
-						<option value='whole30'>Whole30</option>
-					</select>
-					<button type='submit' className='search-button'>Submit</button>
-            </form>
-            <SearchResults results={searchResults} />
+					<FormControl sx={{ m: 1, minWidth: 150 }}>
+						<TextField
+							name='searchInput'
+							label='Search'
+							type='search'
+							value={formState.searchInput}
+							onChange={handleChange}
+						/>
+					</FormControl>
+					<FormControl sx={{ m: 1, minWidth: 150 }}>
+						<InputLabel id='checkboxInput'>Diet preference</InputLabel>
+						<Select
+							name='checkboxInput'
+							id='checkboxInput'
+							onChange={handleChange}
+							value={formState.checkboxInput}>
+							<MenuItem value=''>Choose</MenuItem>
+							<MenuItem value='glutenFree'>Gluten Free</MenuItem>
+							<MenuItem value='keto'>Ketogenic</MenuItem>
+							<MenuItem value='vegetarian'>Vegetarian</MenuItem>
+							<MenuItem value='lactoVeg'>Lacto-Vegetarian</MenuItem>
+							<MenuItem value='ovoVeg'>Ovo-Vegetaran</MenuItem>
+							<MenuItem value='vegan'>Vegan</MenuItem>
+							<MenuItem value='pescetarian'>Pescetarian</MenuItem>
+							<MenuItem value='paleo'>Paleo</MenuItem>
+							<MenuItem value='primal'>Primal</MenuItem>
+							<MenuItem value='lowFodMap'>Low FODMAP</MenuItem>
+							<MenuItem value='whole30'>Whole30</MenuItem>
+						</Select>
+						<button type='submit' className='search-button'>
+							Submit
+						</button>
+					</FormControl>
+				</form>
+				<SearchResults results={searchResults} />
 			</>
 		);
     }

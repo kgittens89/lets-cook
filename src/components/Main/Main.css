@@ -7,13 +7,13 @@
 p {
     text-align: center;
     font-weight: 600;
-    font-size: 2.3vw;
+    font-size: clamp(12px, 2.3vw, 18px);
 }
 
 .img-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 100%;
     width: 100%;
     min-width: 50%;
@@ -23,7 +23,7 @@ p {
 }
 
 .main-title {
-    font-size: 3.5vw;
+    font-size: clamp(16px, 3.5vw, 28px);
     color: var(--third-color);
     background-color: var(--secondary-color);
     margin: 0 19%;
@@ -36,7 +36,7 @@ p {
     color: var(--third-color);
     border: var(--primary-color) 3px solid;
     background-color: var(--secondary-color);
-    font-size: 3vw;
+    font-size: clamp(16px, 3vw, 32px);
     margin: 44%;
     padding: 0.3em;
     font-weight: 600;
@@ -47,20 +47,24 @@ p {
     justify-content: center;
     max-width: 85%;
     margin: 2em auto;
+    flex-wrap: wrap;
 }
 
 .random-recipe-card a {
     padding: 1em;
-    max-width: 33%;
+    max-width: 25%;
 }
 
 .random-recipe-card img {
     max-width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 @media(max-width: 475px) {
-   .img-card {
-       border: 1px solid var(--primary-color);
-   }
+    .img-card {
+        border: 1px solid var(--primary-color);
+    }
+    .random-recipe-card a {
+        max-width: 35%;
+    }
 }

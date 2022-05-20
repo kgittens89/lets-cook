@@ -7,14 +7,14 @@ import Button from './Button/Button';
 import './Main.css';
 
 function Main() {
-	const randomRecipes = useFetchRandom(3);
+	const randomRecipes = useFetchRandom(6);
 
 	if (!randomRecipes) {
 		return <p>Loading...</p>;
 	}
 	return (
 		<>
-			<h2 className="main-title">Current Random Suggestions</h2>
+			<h2 className="main-title">Random Recipe Suggestions</h2>
 			<div className='random-recipe-card'>
 				{randomRecipes.map((recipe) => {
 					return (

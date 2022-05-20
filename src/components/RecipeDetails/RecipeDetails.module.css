@@ -1,9 +1,9 @@
 h4 {
-    font-size: 2vw;
+    font-size: clamp(16px, 2vw, 30px);
 }
 
 li {
-    font-size: 1.6vw;
+    font-size: clamp(12px, 1.6vw, 18px);
 }
 
 .bottom_section {
@@ -17,6 +17,7 @@ li {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    margin: auto 2em;
 }
 
 .img {
@@ -24,6 +25,7 @@ li {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    max-width: 700px;
     border: 2px solid var(--primary-color);
 }
 
@@ -37,13 +39,15 @@ li {
 
 .summary {
     text-align: center;
-    padding: 0.5em 1em;
+    padding: 0.5em 2em;
     font-weight: 600;
-    font-size: 1.6vw;
+    font-size: clamp(12px, 1.6vw, 18px);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
 }
 
 .title {
-    font-size: 2.8vw;
+    font-size: clamp(16px, 2.8vw, 30px);
     max-height: 3em;
     color: var(--third-color);
     border: var(--primary-color) 2px solid;
@@ -53,19 +57,8 @@ li {
     text-align: center;
 }
 
-@media (max-width: 500px) {
-    li {
-        font-size: 2vw;
-    }
-
-    .summary {
-        background-color: var(--secondary-color);
-        border: 1px solid var(--primary-color);
-        font-size: 2vw;
-    }  
-
-    li {
-        font-weight: 600;
-        font-size: 2vw;
+@media (max-width: 500px) { 
+    .details {
+        margin: auto;
     }
 }

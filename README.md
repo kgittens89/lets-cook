@@ -128,9 +128,11 @@ imageType:
 
 ## Working Site Images 
 
-![Home Page](assets/Main.png)
+![Home Page](src/assets/Main.png)
 
-![Recipe Details Page](assets/Details.png)
+![Recipe Details Page](src/assets/Details.png)
+
+![Search Results Page](src/assets/SearchResults.png)
 
 ## Wire Frames
 >

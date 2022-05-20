@@ -4,7 +4,7 @@
     padding: 1em;
     margin: 3em auto;
     max-width: 60%;
-    font-size: clamp(16px, 1.1vw, 18px);
+    font-size: clamp(16px, 1.1vw, 20px);
 }
 
 .about-link, .search {

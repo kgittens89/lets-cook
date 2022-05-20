@@ -10,6 +10,22 @@ p {
     font-size: clamp(12px, 2.3vw, 18px);
 }
 
+.developer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.developer h4 {
+    font-size: clamp(16px, 2vw, 20px)
+}
+
+.headshotImg {
+	border-radius: 50%;
+	max-width: 150px;
+	padding: 10px;
+}
+
 .img-card {
     display: flex;
     flex-direction: column;

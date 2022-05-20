@@ -30,30 +30,18 @@
     text-align: center;
 }
 
+/* * {
+    border: 1px solid red;
+} */
+
 .search-form {
     display: flex;
     justify-content: center;
 }
 
-.search-button {
-        color: var(--third-color);
-        border: var(--primary-color) 3px solid;
-        background-color: var(--secondary-color);
-        font-size: 1em;
-        padding: 0.35em;
-        font-weight: 600;
-        margin: 1em;
-        border-radius: 3px;
-}
-
 @media(max-width: 500px) {
     .search-form {
         display: grid;
-    }
-
-    .search-button {
-        max-width: 50%;
-        margin: 0 auto;
     }
 
     .result-box {

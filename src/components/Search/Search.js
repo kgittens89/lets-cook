@@ -6,9 +6,19 @@ import {
 	InputLabel,
 	MenuItem,
 	Select,
-	FormControl
+	FormControl,
+	Button,
+	styled,
 } from '@mui/material';
 
+const FormButton = styled(Button)({
+	border: '#645E59 3px solid',
+	fontSize: '1em',
+	fontWeight: 600,
+	color: '#F7644D',
+	margin: '10px',
+	padding: '0.5em 0.8em',
+});
 
 function Search() {
     const initialState = {
@@ -49,7 +59,7 @@ function Search() {
 							onChange={handleChange}
 						/>
 					</FormControl>
-					<FormControl sx={{ m: 1, minWidth: 150 }}>
+					<FormControl sx={{ m: 1, minWidth: 150, display: 'flex' }}>
 						<InputLabel id='checkboxInput'>Diet preference</InputLabel>
 						<Select
 							name='checkboxInput'
@@ -69,10 +79,8 @@ function Search() {
 							<MenuItem value='lowFodMap'>Low FODMAP</MenuItem>
 							<MenuItem value='whole30'>Whole30</MenuItem>
 						</Select>
-						<button type='submit' className='search-button'>
-							Submit
-						</button>
 					</FormControl>
+					<FormButton type='submit'>Submit</FormButton>
 				</form>
 				<SearchResults results={searchResults} />
 			</>

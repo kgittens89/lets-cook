@@ -4,12 +4,12 @@
     padding: 1em;
     margin: 3em auto;
     max-width: 60%;
-    font-size: 1.1em;
+    font-size: clamp(16px, 1.1vw, 18px);
 }
 
 .about-link, .search {
     color: var(--third-color);
-    font-size: 2.5vw;
+    font-size: clamp(16px, 2.5vw, 24px);
     font-weight: 600;
     padding: 0.2em 0.4em;
 }
@@ -17,7 +17,7 @@
 .logo {
     color: var(--third-color);
     padding: 0.3em;
-    font-size: 4vw;
+    font-size: clamp(20px, 4vw, 40px);
     font-weight: 700;
 }
 
@@ -26,7 +26,7 @@
     justify-content: space-between;
     align-items: center;
     list-style-type: none; 
-    padding: 0 2em 0.4em;
+    padding: 0 1em 0.4em;
     max-width: 80%;
     margin: 2em auto;
     border-bottom: var(--primary-color) 2px solid;

@@ -7,16 +7,27 @@ import Main from './components/Main/Main';
 import RecipeDetails from './components/RecipeDetails/RecipeDetails';
 import Search from './components/Search/Search';
 
+import imageNotFound from './assets/Image_not_available.png'
+
 function App() {
 	return (
 		<div className='container'>
-				<Nav />
+			<Nav />
 			<main>
 				<Routes>
-					<Route path='/' element={<Main />} />
-					<Route path='/:id' element={<RecipeDetails />} />
-					<Route path='/about' element={<About />} />
-					<Route path='/search' element={<Search />} />
+					<Route path='/' element={<Main imageNotFound={imageNotFound} />} />
+					<Route
+						path='/:id'
+						element={<RecipeDetails imageNotFound={imageNotFound} />}
+					/>
+					<Route
+						path='/about'
+						element={<About />}
+					/>
+					<Route
+						path='/search'
+						element={<Search />}
+					/>
 				</Routes>
 			</main>
 		</div>

@@ -6,7 +6,7 @@ import useFetchRandom from '../../hooks/useFetchRandom';
 import Button from './Button/Button';
 import './Main.css';
 
-function Main() {
+function Main({ imageNotFound }) {
 	const randomRecipes = useFetchRandom(6);
 
 	if (!randomRecipes) {
@@ -14,13 +14,16 @@ function Main() {
 	}
 	return (
 		<>
-			<h2 className="main-title">Random Recipe Suggestions</h2>
+			<h2 className='main-title'>Random Recipe Suggestions</h2>
 			<div className='random-recipe-card'>
 				{randomRecipes.map((recipe) => {
 					return (
 						<Link to={`/${recipe.id}`} key={recipe.id}>
 							<div className='img-card'>
-								<img src={recipe.image} alt={recipe.title} />
+								<img
+									src={recipe.image ? recipe.image : imageNotFound}
+									alt={recipe.title}
+								/>
 								<p>{recipe.title}</p>
 							</div>
 						</Link>

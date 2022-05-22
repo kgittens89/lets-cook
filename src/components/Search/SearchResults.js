@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Search.css'
-import { Card, CardContent, CardActionArea, CardMedia, Typography } from '@mui/material';
+// import { Card, CardContent, CardActionArea, CardMedia, Typography } from '@mui/material';
 
 
 function SearchResults({ results, imageNotFound }) {
